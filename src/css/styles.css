@@ -1,20 +1,43 @@
-html, body, body > div, .app {
+html,
+body,
+body>div,
+.app {
+  margin: 0;
+  padding: 0;
   height: 100%;
-  background-color : rgb(34, 56, 67)
+  width: 100%;
+  background-color: rgb(34, 56, 67)
 }
 
 .root-style {
-  background-color : rgb(34, 56, 67)
+  background-color: rgb(34, 56, 67)
 }
 
 .back-movie-style {
-  background-color : #223843
+  background-color: #223843
 }
 
 .text-style {
   color: #c5ced7
 }
-
+.title {
+  font-size: larger;
+  font-family: 'Finlandica', sans-serif;
+  color: #4e1311;
+}
 .header-style {
-  background-color : #918156
+  top: 0;
+  font-size: x-large;
+  font-family: 'Finlandica', sans-serif;
+  color: #4e1311;
+  font-weight: bold;
+  position: -webkit-sticky;
+  background-color: #516975;
+  border-style: solid;
+  border-color: #4e1311;
+  border-width: medium;
+}
+
+.link {
+  color: #B9A97D;
 }

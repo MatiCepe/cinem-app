@@ -15,7 +15,6 @@ export const Landing = () => {
       setPopularMovies([...filteredMovies])
     }
     else {
-      console.log("landing")
       const getLandingMovies = async () => {
         let response = await discoverMoviesOnLanding(rating)
         if (response) {

@@ -1,4 +1,4 @@
-import { CCard, CCardBody, CCardImage, CCardTitle, CCardFooter, CTooltip, CBadge } from "@coreui/react";
+import { CCard, CCardBody, CCardImage, CCardTitle, CCardFooter, CBadge } from "@coreui/react";
 import { useMoviesContext } from "../context/MoviesContext";
 import { BiCameraMovie } from "react-icons/bi"
 
@@ -14,10 +14,6 @@ export const Movie = (data) => {
   }
   
   return (
-   
-      <CTooltip
-        content={"Overview: " + data.overview}
-        placement="auto">
         <CCard
           onClick={()=>setSelected()}
           textColor="white"
@@ -34,7 +30,5 @@ export const Movie = (data) => {
             <span className="text-style m-2">Average: <CBadge className="border border-light p-2" color="secondary">{data.vote_average}</CBadge></span>
           </CCardFooter>
         </CCard>
-      </CTooltip>
-
   )
 }
